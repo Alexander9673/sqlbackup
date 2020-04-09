@@ -19,10 +19,10 @@ for (let i = 0; i < config.mysql.databases.length; i++) {
     `sql/${Time}/${config.mysql.databases[i]}`)
   
   console.log(`First Backup of database ${config.mysql.databases[i]} now available in the folder
-"sql/${Time}/${config.mysql.databases[i]}.sql
+"sql/${Time}/${config.mysql.databases[i]}.sql"
 Next backup would be available in 24 hours.
 `)
-
+  
   setInterval(() => {
     Time = new Date().toISOString().slice(0, 10);
 
@@ -36,7 +36,7 @@ Next backup would be available in 24 hours.
       `sql/${Time}/${config.mysql.databases[i]}`)
     
     console.log(`Backup for database ${config.mysql.databases[i]} for date ${Time} is now available
-in the folder "sql/${Time}/${config.mysql.databases[i]}.sql`)
+in the folder "sql/${Time}/${config.mysql.databases[i]}.sql"`)
   }, config.backupInterval * 1000);
 }
 
