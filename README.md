@@ -18,7 +18,7 @@ To install `pm2`, simply do the following.
 - `npm install pm2 -g` or `yarn add pm2 -g`  
 
 **How would i run it?**  
-- `pm2 install index.js`  
+- `pm2 run index.js`  
 (Make sure you're in the main directory of the code. Where index.js is)  
 
 That would make it run 24/7 even when closing the terminal/cmd.
