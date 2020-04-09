@@ -1,0 +1,14 @@
+{
+  "mysql": {
+    "username": "username",
+    "password": "password",
+    "host": "localhost",
+    "port": 3306,
+    "databases": [
+      "rathena4444_rag",
+      "rathena4444_log"
+    ]
+  },
+
+  "backupInterval": 86400
+}
