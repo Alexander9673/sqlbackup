@@ -25,7 +25,7 @@ That would make it run 24/7 even when closing the terminal/cmd.
 
 ## Config
 Defaults:  
-```js
+```json
 {
   "mysql": {
     "username": "username",
