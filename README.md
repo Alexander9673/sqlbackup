@@ -52,5 +52,5 @@ Defaults:
 Take note that you can't go less than `86400`.
 
 ## How does this work?
-We simply use `child_process` to create a new process and would run `mysqldump` to export Mysql databases.  
-After exporting, we close the process and then would wait for the interval to be finished, then repeat the process.
+I simply used `child_process` to create a new process and would run `mysqldump` to export Mysql databases.  
+After exporting, the code closes the process of the ran command and then would wait for the interval to be finished, then repeat the process.
