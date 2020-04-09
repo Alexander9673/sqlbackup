@@ -3,6 +3,9 @@ const child_process = require("child_process");
 
 const config = require("./config");
 
+if (config.backupInterval < 86400)
+  throw new Error("Backup interval can't be less than 86400 seconds or 1 day.");
+
 checkFolder(`${__dirname}/sql`)
 
 for (let i = 0; i < config.mysql.databases.length; i++) {
